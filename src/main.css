@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* child margin moves with parent, source https://stackoverflow.com/a/30847624/10735867 */
+#root {
+  height: 100%;
+}
+
+#root::before {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+#root::after {
+  clear: both;
+  content: '';
+  display: table;
+}
