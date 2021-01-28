@@ -4,17 +4,28 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "types": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
+    "@matejbransky/eslint-config": "^1.0.0-alpha.8",
+    "@matejbransky/prettier-config": "^1.0.0-alpha.2",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@vitejs/plugin-react-refresh": "^1.1.0",
+    "eslint": "^7.18.0",
+    "prettier": "^2.2.1",
     "typescript": "^4.1.2",
     "vite": "^2.0.0-beta.50"
-  }
+  },
+  "eslintConfig": {
+    "extends": "@matejbransky/eslint-config"
+  },
+  "prettier": "@matejbransky/prettier-config"
 }
