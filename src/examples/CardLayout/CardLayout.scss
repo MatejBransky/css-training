@@ -1,8 +1,10 @@
 .CardLayout--flex {
+  background-color: rgb(243, 243, 243);
   display: flex;
   flex-wrap: wrap;
+  margin: 1rem -0, 5rem;
 }
 
 .CardLayout--flex > * {
-  
+  margin: 0.5rem;
 }

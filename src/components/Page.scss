@@ -7,6 +7,12 @@
     'sidebar main';
   grid-template-columns: minmax(auto, 20ch) minmax(40ch, 1fr);
   grid-template-rows: auto 1fr;
+  gap: 1px
+}
+
+.Page > * {
+  box-sizing: content-box;
+  outline: 1px solid;
 }
 
 .Page__header {
