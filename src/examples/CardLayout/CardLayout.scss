@@ -1,4 +1,8 @@
-.CardLayout {
-  height: 100%;
-  background: gray;
+.CardLayout--flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.CardLayout--flex > * {
+  
 }

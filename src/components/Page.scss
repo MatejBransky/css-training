@@ -1,0 +1,25 @@
+
+
+.Page {
+  display: grid;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main';
+  grid-template-columns: minmax(auto, 20ch) minmax(40ch, 1fr);
+  grid-template-rows: auto 1fr;
+}
+
+.Page__header {
+  grid-area: header;
+  padding: 1rem;
+}
+
+.Page__sidebar {
+  grid-area: sidebar;
+  padding: 1rem;
+}
+
+.Page__main {
+  grid-area: main;
+  padding: 1rem;
+}
