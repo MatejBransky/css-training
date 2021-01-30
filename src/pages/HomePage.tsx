@@ -8,11 +8,13 @@ const HomePage: React.FC<HomePageProps> = (props) => {
         <h1>CSS Training</h1>
       </header>
       <main>
-        {props.examples.map(([title, path]) => (
-          <Link key={path} to={path}>
-            {title}
-          </Link>
-        ))}
+        <ul>
+          {props.examples.map(([title, path]) => (
+            <li key={path}>
+              <Link to={path}>{title}</Link>
+            </li>
+          ))}
+        </ul>
       </main>
     </div>
   );

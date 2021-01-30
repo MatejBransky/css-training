@@ -1,0 +1,30 @@
+.Layout {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'aside main'
+    'footer footer';
+  grid-template-columns: 20ch 1fr;
+  grid-template-rows: 3rem 1fr 5rem;
+}
+
+.Layout__header {
+  background-color: rgb(255, 152, 152);
+  grid-area: header;
+}
+
+.Layout__aside {
+  background-color: rgb(157, 157, 255);
+  grid-area: aside;
+}
+
+.Layout__main {
+  background-color: rgb(255, 255, 179);
+  grid-area: main;
+}
+
+.Layout__footer {
+  background-color: rgb(208, 255, 208);
+  grid-area: footer;
+}

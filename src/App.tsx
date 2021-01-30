@@ -3,9 +3,11 @@ import { Route, Routes } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
 import CardLayoutPage from './pages/CardLayoutPage';
+import HolyGrailPage from './pages/HolyGrailPage';
 
 const examples: [string, string, JSX.Element][] = [
   ['Card Layout', '/card-layout', <CardLayoutPage />],
+  ['Holy Grail', '/holy-grail', <HolyGrailPage />],
 ];
 
 function App() {
