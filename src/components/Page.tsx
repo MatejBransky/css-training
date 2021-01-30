@@ -2,18 +2,30 @@ import React from 'react';
 
 import './Page.scss';
 
-export const Page: React.FC = (props) => {
-  return <div {...props} className="Page" />;
-};
+export const Page = React.forwardRef<
+  HTMLDivElement,
+  React.ComponentPropsWithoutRef<'div'>
+>((props, ref) => {
+  return <div {...props} className="Page" ref={ref} />;
+});
 
-export const PageHeader: React.FC = (props) => {
-  return <header {...props} className="Page__header" />;
-};
+export const PageHeader = React.forwardRef<
+  HTMLDivElement,
+  React.ComponentPropsWithoutRef<'header'>
+>((props, ref) => {
+  return <header {...props} className="Page__header" ref={ref} />;
+});
 
-export const PageSidebar: React.FC = (props) => {
-  return <aside {...props} className="Page__sidebar" />;
-};
+export const PageSidebar = React.forwardRef<
+  HTMLDivElement,
+  React.ComponentPropsWithoutRef<'aside'>
+>((props, ref) => {
+  return <aside {...props} className="Page__sidebar" ref={ref} />;
+});
 
-export const PageMain: React.FC = (props) => {
-  return <main {...props} className="Page__main" />;
-};
+export const PageMain = React.forwardRef<
+  HTMLDivElement,
+  React.ComponentPropsWithoutRef<'main'>
+>((props, ref) => {
+  return <main {...props} className="Page__main" ref={ref} />;
+});

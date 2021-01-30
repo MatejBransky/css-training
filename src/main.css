@@ -9,6 +9,7 @@ body {
 
 body {
   margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* child margin moves with parent, source https://stackoverflow.com/a/30847624/10735867 */

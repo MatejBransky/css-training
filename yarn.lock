@@ -236,6 +236,11 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.2.0"
 
+"@matejbransky/logger@^1.0.0-alpha.8":
+  version "1.0.0-alpha.8"
+  resolved "https://registry.npmjs.org/@matejbransky/logger/-/logger-1.0.0-alpha.8.tgz#530c514fa17c77dd9224a1a01b997775b6ebf9dd"
+  integrity sha512-47WfpBnpEcMbX8nsjT9Pk8vfpSX3AtMjRbtUohbeAPtHX5yJFULNGi9UG4yaY8/LJMjwXWCGDgFi8T7blwmKyw==
+
 "@matejbransky/prettier-config@^1.0.0-alpha.2":
   version "1.0.0-alpha.2"
   resolved "https://registry.npmjs.org/@matejbransky/prettier-config/-/prettier-config-1.0.0-alpha.2.tgz#bbcb1ba141090dc8f2bab71e8bf32a21f4933bf0"
@@ -261,6 +266,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
+
+"@types/faker@^5.1.5":
+  version "5.1.5"
+  resolved "https://registry.npmjs.org/@types/faker/-/faker-5.1.5.tgz#f14b015e0100232bb00c6dd7611505efb08709a0"
+  integrity sha512-2uEQFb7bsx68rqD4F8q95wZq6LTLOyexjv6BnvJogCO4jStkyc6IDEkODPQcWfovI6g6M3uPQ2/uD/oedJKkNw==
 
 "@types/json-schema@^7.0.3":
   version "7.0.7"
@@ -291,6 +301,11 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
+
+"@types/resize-observer-browser@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.npmjs.org/@types/resize-observer-browser/-/resize-observer-browser-0.1.5.tgz#36d897708172ac2380cd486da7a3daf1161c1e23"
+  integrity sha512-8k/67Z95Goa6Lznuykxkfhq9YU3l1Qe6LNZmwde1u7802a3x8v44oq0j91DICclxatTr0rNnhXx7+VTIetSrSQ==
 
 "@typescript-eslint/eslint-plugin@^4.9.1":
   version "4.14.1"
@@ -995,6 +1010,11 @@ esutils@^2.0.2:
   version "2.0.3"
   resolved "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
+
+faker@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.npmjs.org/faker/-/faker-5.2.0.tgz#5ee7ca475737eda8cf59c0cbaae5f5068e668dd9"
+  integrity sha512-UlrF1NNRIdzEPtBcy5l8JTlnXQZdz+4pQc3v2TAVocW39nnczCNQ0g0CBKgPGISJPzA2DqJVN1kdr+FCRFdN5g==
 
 fast-deep-equal@^3.1.1:
   version "3.1.3"

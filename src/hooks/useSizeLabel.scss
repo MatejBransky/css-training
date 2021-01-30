@@ -1,0 +1,15 @@
+.Observed {
+  outline: var(--observed-outline, 1px solid rgba(255, 53, 53, 0.5));
+  position: relative;
+
+  &::after {
+    background-color: var(--observed-background, rgba(255, 53, 53, 0.2));
+    color: rgba(0, 0, 0, 0.637);
+    content: var(--observed-text, '---');
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

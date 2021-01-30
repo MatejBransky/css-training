@@ -10,7 +10,9 @@
     "types": "tsc --noEmit"
   },
   "dependencies": {
+    "@matejbransky/logger": "^1.0.0-alpha.8",
     "classcat": "^4.1.0",
+    "faker": "^5.2.0",
     "history": "5",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -19,8 +21,10 @@
   "devDependencies": {
     "@matejbransky/eslint-config": "^1.0.0-alpha.8",
     "@matejbransky/prettier-config": "^1.0.0-alpha.2",
+    "@types/faker": "^5.1.5",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/resize-observer-browser": "^0.1.5",
     "@vitejs/plugin-react-refresh": "^1.1.0",
     "eslint": "^7.18.0",
     "prettier": "^2.2.1",

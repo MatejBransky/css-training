@@ -1,6 +1,12 @@
 .Card {
   background: lightgray;
   border-radius: 0.2em;
+  display: flex;
+  flex-direction: column;
   padding: 1em;
   text-align: center;
+}
+
+.Card__header {
+  padding-bottom: 0.5rem;
 }

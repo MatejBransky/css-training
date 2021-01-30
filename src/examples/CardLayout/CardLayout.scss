@@ -1,10 +1,42 @@
-.CardLayout--flex {
-  background-color: rgb(243, 243, 243);
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem -0, 5rem;
+// https://moderncss.dev/container-query-solutions-with-css-grid-and-flexbox/#flexbox-solution-#1
+:root {
+  --breakpoint: 15rem;
 }
 
-.CardLayout--flex > * {
-  margin: 0.5rem;
+.CardLayout--flexbox-albatross {
+  // background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+
+  > * {
+    // ensure that the column will fill as much space as the algorithm and other property values will allow
+    flex-grow: 1;
+    // lead to the element being at minimum --flex-min and below that minimum expanding to 100%
+    flex-basis: calc((var(--breakpoint) - 100%) * 999);
+    margin: 0.5rem;
+  }
+}
+
+.CardLayout--flex-pancake {
+  // background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+
+  > * {
+    // flex-shrink: 1;
+    // ensure that the column will fill as much space as the algorithm and other property values will allow
+    flex-grow: 1;
+    // lead to the element being at minimum --flex-min and below that minimum expanding to 100%
+    // flex-basis: calc((var(--flex-min) - 100%) * 999);
+    flex-basis: var(--breakpoint);
+    margin: 0.5rem;
+  }
+}
+
+.CardLayout--grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(var(--breakpoint), 1fr));
 }
